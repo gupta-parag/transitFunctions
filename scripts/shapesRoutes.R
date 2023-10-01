@@ -6,7 +6,7 @@ library(leaflet)
 library(htmlwidgets)
 
 
-source("E:\\Z\\transit_Functions\\scripts\\stopsShapes.R")
+source("E:\\Z\\transitFunctions\\scripts\\stopsShapes.R")
 
 #parent function
 
@@ -50,8 +50,8 @@ route_type_def <- data.frame(route_type = c(0:7, 11:12),
 
 
 ################################# UNZIPPIG THE FILES ################################
-zip_feed <- str_c("E:\\Z\\transit_Functions\\GTFS_feed\\zip\\", name_of_file)
-unzip_feed <- str_c("E:\\Z\\transit_Functions\\GTFS_feed\\unzip\\", 
+zip_feed <- str_c("E:\\Z\\transitFunctions\\GTFS_feed\\zip\\", name_of_file)
+unzip_feed <- str_c("E:\\Z\\transitFunctions\\GTFS_feed\\unzip\\", 
                     gsub(name_of_file, pattern = ".zip$", replacement = ""))
  
 #unziping the file to the directory
